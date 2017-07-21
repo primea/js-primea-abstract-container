@@ -1,0 +1,28 @@
+{
+  "name": "primea-abstract-container",
+  "version": "0.0.0",
+  "description": "Abstract Primea container",
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primea/js-primea-container.git"
+  },
+  "bugs": {
+    "url": "https://github.com/primea/js-primea-container/issues"
+  },
+  "homepage": "https://github.com/primea/js-primea-container",
+  "keywords": [
+    "primea",
+    "container",
+    "kernel"
+  ],
+  "author": "mjbecze <mjbecze@gmail.com>",
+  "contributors": "Alex Beregszaszi <alex@rtfs.hu>",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "standard": "10.0.2",
+    "tape": "^4.5.1"
+  }
+}
