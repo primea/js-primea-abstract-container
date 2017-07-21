@@ -7,12 +7,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/primea/js-primea-container.git"
+    "url": "git+https://github.com/primea/js-primea-abstract-container.git"
   },
   "bugs": {
-    "url": "https://github.com/primea/js-primea-container/issues"
+    "url": "https://github.com/primea/js-primea-abstract-container/issues"
   },
-  "homepage": "https://github.com/primea/js-primea-container",
+  "homepage": "https://github.com/primea/js-primea-abstract-container",
   "keywords": [
     "primea",
     "container",
