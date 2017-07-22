@@ -1,4 +1,4 @@
-class AbstractContainer {
+module.exports = class AbstractContainer {
   // The constructor is given an instance of the kernel
   // https://github.com/primea/js-primea-hypervisor/blob/master/docs/kernel.md
   constructor (kernel) {
