@@ -11,14 +11,14 @@ module.exports = class AbstractContainer {
   // receives a message with a singel port, which is a channel to its parent (aka the root).
   //
   // Optionally it can return a single value.
-  async initialize (message) {
+  async onCreation (message) {
     throw new Error('Unimplemented initialiser')
   }
 
   // This is called for each incoming message the container gets.
   //
   // Optionally it can return a single value.
-  async run (message) {
+  async onMessage (message) {
     throw new Error('Unimplemented message: ' + message.data)
   }
 
