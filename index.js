@@ -18,9 +18,7 @@ module.exports = class AbstractContainer {
   // This method runs when the container needs to be started up. It cannot be
   // called before onCreation was successful. It can be called after a shutdown
   // was requested in onIdle.
-  async onStartup () {
-    throw new Error('Unimplemented startup method')
-  }
+  async onStartup () {}
 
   // This is called for each incoming message the container gets.
   //
