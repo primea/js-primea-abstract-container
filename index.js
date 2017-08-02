@@ -38,4 +38,10 @@ module.exports = class AbstractContainer {
     // a time consuming operation.
     this.kernel.shutdown()
   }
+
+  // each container type used in a hypervisor instance must have a different
+  // id defined as an interger. This can be overriden at the time the container is registered with the hypervisor.
+  static get containerTypeId () {
+    throw new Error('Unimplemented container type id')
+  }
 }
