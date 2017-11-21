@@ -1,8 +1,8 @@
 module.exports = class AbstractContainer {
-  // The constructor is given an instance of the kernel
-  // https://github.com/primea/js-primea-hypervisor/blob/master/docs/kernel.md
-  constructor (kernel) {
-    this.kernel = kernel
+  // The constructor is given an instance of the actor
+  // https://github.com/primea/js-primea-hypervisor/blob/master/docs/actor.md
+  constructor (actor) {
+    this.actor = actor
   }
 
   // This method runs once when the container is initially created.
@@ -21,7 +21,6 @@ module.exports = class AbstractContainer {
   async onStartup () {}
 
   // This is called for each incoming message the container gets.
-  //
   // Optionally it can return a single value.
   async onMessage (message) {
     throw new Error('Unimplemented message: ' + message.data)
@@ -32,11 +31,11 @@ module.exports = class AbstractContainer {
   //
   // This can be overriden by a subclass.
   onIdle () {
-    // This tells the kernel that it is safe to freeze (aka turn off) this container.
+    // This tells the actor that it is safe to freeze (aka turn off) this container.
     // This removes all references in memory and the next time this instance is
     // requested it has to be deserialised from storage and spinned up. This can be
     // a time consuming operation.
-    this.kernel.shutdown()
+    this.actor.shutdown()
   }
 
   // each container type used in a hypervisor instance must have a different
